@@ -16,3 +16,4 @@ Connecting to Database:
 1. In terminal, type "Mongo", then "use yelpcamp". 
 2. To show all of your databases, type "show dbs"
 3. To show the collections, type "db.collections.find()"
+4. To show the campgrounds, type "db.campgrounds.find()"
