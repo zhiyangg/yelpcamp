@@ -17,3 +17,4 @@ Connecting to Database:
 2. To show all of your databases, type "show dbs"
 3. To show the collections, type "db.collections.find()"
 4. To show the campgrounds, type "db.campgrounds.find()"
+5. To show all the reviews, type "db.reviews.find()'
