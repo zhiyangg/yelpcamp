@@ -4,7 +4,9 @@ const Campground = require('../models/campground');
 
 const {places, descriptors, shuffledImages} = require('./seedHelpers')
 
-mongoose.connect('mongodb://127.0.0.1:27017/yelpcamp');
+// mongoose.connect('mongodb://127.0.0.1:27017/yelpcamp');
+const dbUrl = process.env.DB_URL;
+mongoose.connect(dbUrl);
 
 // Connecting to a database
 const db = mongoose.connection;
@@ -26,7 +28,7 @@ function shuffleArray(array) {
 }
 
 const seedDB = async() => {
-    // await Campground.deleteMany({});
+    await Campground.deleteMany({});
     for (let i = 0; i < 200; i++) {
         const rand1000 = Math.floor(Math.random() * 1000); 
         const price = Math.floor(Math.random() * 20) + 10;
