@@ -26,7 +26,7 @@ function shuffleArray(array) {
 }
 
 const seedDB = async() => {
-    await Campground.deleteMany({});
+    // await Campground.deleteMany({});
     for (let i = 0; i < 200; i++) {
         const rand1000 = Math.floor(Math.random() * 1000); 
         const price = Math.floor(Math.random() * 20) + 10;
