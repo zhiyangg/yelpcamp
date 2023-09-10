@@ -24,7 +24,7 @@ const reviewRoutes = require('./routes/reviews');
 
 const app = express();
 // mongodb://127.0.0.1:27017/yelpcamp
-const dbUrl = 'mongodb://127.0.0.1:27017/yelpcamp';
+const dbUrl = DB_URL;
 mongoose.connect(dbUrl);
 
 // Connecting to a database
